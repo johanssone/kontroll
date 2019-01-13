@@ -1,0 +1,9 @@
+mock
+pur
+pytest
+pytest-cov
+pytest-helpers-namespace
+pytest-mock
+pytest-verbose-parametrize
+yapf
+wheel
