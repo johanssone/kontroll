@@ -1,5 +1,12 @@
+import os
 import click
 import click_completion
+import kontroll
+from kontroll import util
+
+#Groups
+from kontroll.command.env import env 
+
 
 click_completion.init()
 
@@ -30,4 +37,4 @@ def main(ctx, debug, config):
     ctx.obj['args']['debug'] = debug
     ctx.obj['args']['config'] = config
 
-main.add_command(command.set.set)
+main.add_command(env)
